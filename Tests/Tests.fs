@@ -22,5 +22,12 @@ let ``Parse generate width with 3 of size`` () =
 let ``Parse generate with correct values`` () =
     let input = "123456789012"
     let image = parse input 3 2
-    image.layers |> List.concat |> should equivalent [123;456;789;012] 
+    image.layers |> List.concat |> should equivalent ["123";"456";"789";"012"] 
+
+
+//[<Fact>]
+//let ``map layers`` () =
+//    let input = "0222112222120000"
+//    let result = parse input 2 2 |> mapLayers
+//    result |> should equal "0110" 
 

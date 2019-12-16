@@ -16,6 +16,7 @@ module Decode =
             |> List.map (fun layer -> layer |> List.chunkBySize width |> List.map (fun pixel -> pixel |> String.Concat))
         {dimension=(width, height); layers=layers}
 
-
+    let mapLayers image =
+        ""
 
 
