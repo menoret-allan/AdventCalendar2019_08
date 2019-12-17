@@ -25,9 +25,9 @@ let ``Parse generate with correct values`` () =
     image.layers |> List.concat |> should equivalent ["123";"456";"789";"012"] 
 
 
-//[<Fact>]
-//let ``map layers`` () =
-//    let input = "0222112222120000"
-//    let result = parse input 2 2 |> mapLayers
-//    result |> should equal "0110" 
+[<Fact>]
+let ``map layers`` () =
+    let input = "0222112222120000"
+    let result = parse input 2 2 |> mapLayers
+    result |> should equal "0110" 
 
